@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+def PruebaUrl(self):
+    print("==== HOLA PROBANDO URLS ====")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('prueba/', PruebaUrl),
 ]
